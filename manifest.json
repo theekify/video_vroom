@@ -1,15 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Video Vroom",
-  "version": "1.0",
-  "description": "Change YouTube playback speed without Premium",
+  "name": "VideoVroom",
+  "version": "1.1",
+  "description": "Change YouTube playback speed without Premium.",
   "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
+      "16": "icon16.png",
+      "64": "icon64.png",
       "128": "icon128.png"
     }
   },
+
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
