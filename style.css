@@ -1,9 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    width: 150px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-input {
-    width: 60px;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    width: 240px;
+    padding: 16px;
+    color: #1a1a1a;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+input[type=range] {
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    outline: none;
+    -webkit-appearance: none;
+    background: #e5e5e5;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #e63946;
+    cursor: pointer;
+}
+
+#speedValue {
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 45px;
+    text-align: right;
 }

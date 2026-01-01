@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Speed Controller",
+  "name": "Video Vroom",
   "version": "1.0",
   "description": "Change YouTube playback speed without Premium",
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon16.png"
+      "128": "icon128.png"
     }
   },
   "content_scripts": [
